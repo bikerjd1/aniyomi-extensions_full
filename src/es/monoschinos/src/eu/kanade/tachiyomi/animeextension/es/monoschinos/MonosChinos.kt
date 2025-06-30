@@ -27,9 +27,9 @@ import uy.kohesive.injekt.api.get
 
 class MonosChinos : ConfigurableAnimeSource, ParsedAnimeHttpSource() {
 
-    override val name = "MonosChinos"
+    override val name = "MonosChino"
 
-    override val baseUrl = "https://monoschinos2.com"
+    override val baseUrl = "https://monoschino2.com"
 
     override val lang = "es"
 
@@ -186,7 +186,7 @@ class MonosChinos : ConfigurableAnimeSource, ParsedAnimeHttpSource() {
         LetterFilter(),
     )
 
-    private class YearFilter : AnimeFilter.Text("Año", "2022")
+    private class YearFilter : AnimeFilter.Text("Año", "2025")
     private class LetterFilter : AnimeFilter.Text("Letra", "")
 
     private class GenreFilter : UriPartFilter(
